@@ -2,6 +2,10 @@ import styles from "./Login.module.css";
 import image from "../../assets/blossom-flower.svg";
 import googleIcon from "../../assets/icons-google-logo.svg";
 import appleIcon from "../../assets/icons-apple-logo.svg";
+import { Input } from "@/components/ui/input";
+
+const inputClassName =
+  "h-[var(--control-height)]! rounded-[var(--control-radius)]! border-[length:var(--control-border-width)]! border-[color:var(--color-border)]! px-[var(--spacing-control-inline)]! py-0! text-[length:var(--font-size-control)]! text-[color:var(--color-text)]! placeholder:text-[color:var(--color-placeholder)]! focus-visible:border-[color:var(--color-primary)]! focus-visible:ring-0!";
 
 export default function Login() {
   return (
@@ -14,7 +18,8 @@ export default function Login() {
         <form className={styles.form}>
           <div className={styles.field}>
             <label htmlFor="email">Email address</label>
-            <input
+            <Input
+              className={inputClassName}
               id="email"
               name="email"
               type="email"
@@ -29,7 +34,8 @@ export default function Login() {
               <label htmlFor="password">Password</label>
               <a href="#forgot-password">Forgot password?</a>
             </div>
-            <input
+            <Input
+              className={inputClassName}
               id="password"
               name="password"
               type="password"

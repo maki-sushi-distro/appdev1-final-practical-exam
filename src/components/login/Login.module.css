@@ -62,25 +62,6 @@
   text-decoration: none;
 }
 
-.field input {
-  width: 100%;
-  height: var(--control-height);
-  padding: 0 var(--spacing-control-inline);
-  border: var(--control-border-width) solid var(--color-border);
-  border-radius: var(--control-radius);
-  outline: none;
-  color: var(--color-text);
-  font-size: var(--font-size-control);
-}
-
-.field input::placeholder {
-  color: var(--color-placeholder);
-}
-
-.field input:focus {
-  border-color: var(--color-primary);
-}
-
 .remember {
   display: flex;
   margin-top: var(--spacing-checkbox-top);
