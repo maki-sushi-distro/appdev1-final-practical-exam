@@ -9,6 +9,16 @@
 
 .left {
   min-width: 0;
+  padding: 17vh 8% 0 27%;
+}
+
+.title {
+  margin: 0;
+  color: var(--primary-font-color);
+  font-size: var(--primary-font-size);
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .right {
@@ -19,7 +29,8 @@
 }
 
 .right img {
-  width: 88%;
-  height: 92%;
+  width: 90%;
+  height: 94%;
+  max-width: 600px;
   object-fit: contain;
 }
