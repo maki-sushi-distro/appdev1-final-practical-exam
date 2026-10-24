@@ -1,6 +1,6 @@
 .signup {
   display: grid;
-  grid-template-columns: 42.5% 57.5%;
+  grid-template-columns: var(--auth-grid-columns);
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -9,53 +9,53 @@
 
 .left {
   min-width: 0;
-  padding: 12vh 8% 0 27%;
+  padding: var(--auth-left-padding);
 }
 
 .title {
   margin: 0;
-  color: var(--primary-font-color);
-  font-size: var(--primary-font-size);
-  font-weight: 600;
-  line-height: 1.2;
+  color: var(--color-text);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-title);
   white-space: nowrap;
 }
 
 .form {
   display: flex;
   width: 100%;
-  margin-top: 36px;
+  margin-top: var(--spacing-form-top);
   flex-direction: column;
 }
 
 .field {
   display: grid;
-  gap: 8px;
+  gap: var(--spacing-field-gap);
 }
 
 .field + .field {
-  margin-top: 16px;
+  margin-top: var(--spacing-field-stack);
 }
 
 .field label {
   color: var(--color-text);
-  font-size: 14px;
-  font-weight: 500;
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
 }
 
 .field input {
   width: 100%;
-  height: 44px;
-  padding: 0 14px;
-  border: 1px solid var(--color-border);
+  height: var(--control-height);
+  padding: 0 var(--spacing-control-inline);
+  border: var(--control-border-width) solid var(--color-border);
   border-radius: var(--control-radius);
   outline: none;
   color: var(--color-text);
-  font-size: 12px;
+  font-size: var(--font-size-control);
 }
 
 .field input::placeholder {
-  color: #b7b7b7;
+  color: var(--color-placeholder);
 }
 
 .field input:focus {
@@ -64,17 +64,17 @@
 
 .terms {
   display: flex;
-  margin-top: 16px;
+  margin-top: var(--spacing-checkbox-top);
   align-items: center;
-  gap: 8px;
+  gap: var(--spacing-checkbox-gap);
   color: var(--color-text);
-  font-size: 11px;
+  font-size: var(--font-size-caption);
   white-space: nowrap;
 }
 
 .terms input {
-  width: 14px;
-  height: 14px;
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
   margin: 0;
   accent-color: var(--color-primary);
 }
@@ -85,13 +85,13 @@
 
 .submit {
   width: 100%;
-  height: 44px;
-  margin-top: 22px;
+  height: var(--control-height);
+  margin-top: var(--spacing-submit-top);
   border: 0;
   border-radius: var(--control-radius);
   background: var(--color-primary);
-  color: #ffffff;
-  font-weight: 600;
+  color: var(--color-on-primary);
+  font-weight: var(--font-weight-semibold);
   cursor: pointer;
 }
 
@@ -101,16 +101,16 @@
 
 .divider {
   display: flex;
-  margin-top: 40px;
+  margin-top: var(--spacing-divider-top);
   align-items: center;
-  gap: 12px;
+  gap: var(--spacing-divider-gap);
   color: var(--color-text);
-  font-size: 11px;
+  font-size: var(--font-size-caption);
 }
 
 .divider::before,
 .divider::after {
-  height: 1px;
+  height: var(--divider-height);
   flex: 1;
   background: var(--color-border);
   content: "";
@@ -118,38 +118,38 @@
 
 .socialButtons {
   display: grid;
-  margin-top: 30px;
+  margin-top: var(--spacing-social-top);
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: var(--spacing-social-gap);
 }
 
 .socialButton {
   display: flex;
-  height: 40px;
-  padding: 0 10px;
+  height: var(--social-button-height);
+  padding: 0 var(--spacing-social-inline);
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  border: 1px solid var(--color-border);
+  gap: var(--spacing-field-gap);
+  border: var(--control-border-width) solid var(--color-border);
   border-radius: var(--control-radius);
   background: var(--color-surface);
   color: var(--color-text);
-  font-size: 12px;
-  font-weight: 500;
+  font-size: var(--font-size-control);
+  font-weight: var(--font-weight-medium);
   white-space: nowrap;
   cursor: pointer;
 }
 
 .socialButton img {
-  width: 20px;
-  height: 20px;
+  width: var(--social-icon-size);
+  height: var(--social-icon-size);
 }
 
 .accountPrompt {
-  margin: 18px 0 0;
+  margin: var(--spacing-account-top) 0 0;
   color: var(--color-text);
-  font-size: 12px;
-  font-weight: 500;
+  font-size: var(--font-size-control);
+  font-weight: var(--font-weight-medium);
   text-align: center;
 }
 
@@ -166,8 +166,8 @@
 }
 
 .right img {
-  width: 90%;
-  height: 94%;
-  max-width: 600px;
+  width: var(--auth-image-width);
+  height: var(--auth-image-height);
+  max-width: var(--auth-image-max-width);
   object-fit: contain;
 }

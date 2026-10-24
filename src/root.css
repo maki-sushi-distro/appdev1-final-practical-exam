@@ -1,29 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-font: "Poppins", Arial, sans-serif;
-  --primary-font-color: #111111;
-  --fp-font-color: #0c2a92;
-  --sp-font-color: #0f3dde;
-  --primary-font-size: 32px;
-  --secondary-font-size: 16px;
-
-  font-family: var(--primary-font);
-  color: #111111;
-  background: #eeeeee;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --font-family-primary: "Poppins", Arial, sans-serif;
+  --font-size-title: 32px;
+  --font-size-label: 14px;
+  --font-size-control: 12px;
+  --font-size-caption: 11px;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --line-height-title: 1.2;
+  --line-height-copy: 1.4;
 
   --color-page: #eeeeee;
   --color-surface: #ffffff;
   --color-text: #111111;
-  --color-muted: #6f6f6f;
+  --color-placeholder: #b7b7b7;
   --color-border: #dedede;
   --color-primary: #315f1f;
   --color-primary-hover: #274d18;
-  --color-link: var(--sp-font-color);
+  --color-link: #0f3dde;
+  --color-on-primary: #ffffff;
+
+  --auth-grid-columns: 42.5% 57.5%;
+  --auth-left-padding: 12vh 8% 0 27%;
+  --auth-image-width: 90%;
+  --auth-image-height: 94%;
+  --auth-image-max-width: 600px;
+
+  --spacing-subtitle-top: 8px;
+  --spacing-form-top: 36px;
+  --spacing-field-gap: 8px;
+  --spacing-field-stack: 16px;
+  --spacing-control-inline: 14px;
+  --spacing-checkbox-top: 16px;
+  --spacing-checkbox-gap: 8px;
+  --spacing-submit-top: 22px;
+  --spacing-divider-top: 40px;
+  --spacing-divider-gap: 12px;
+  --spacing-social-top: 30px;
+  --spacing-social-gap: 16px;
+  --spacing-social-inline: 10px;
+  --spacing-account-top: 18px;
+
+  --control-height: 44px;
+  --control-border-width: 1px;
   --control-radius: 6px;
-  --panel-width: 1340px;
+  --checkbox-size: 14px;
+  --divider-height: 1px;
+  --social-button-height: 40px;
+  --social-icon-size: 20px;
+
+  font-family: var(--font-family-primary);
+  color: var(--color-text);
+  background: var(--color-page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
