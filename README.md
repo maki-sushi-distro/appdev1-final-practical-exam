@@ -1,16 +1,12 @@
-# React + Vite
+# What I learned in today's activity are the following:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- ## Creating Pages using CSS modules
+ > - I learned how to create a css module dedicated only to one page and I also learned how to create styling variables in root.cssfor easy access across multiple css mdoule.
 
-Currently, two official plugins are available:
+- ## Using SHADCN UI and TAILWINDCSS to override the current styling format
+  > - I learned how to use the tailwindcss classes inside a file that uses css module for styling and replaced it with shadcn components with the syntax styling from tailwindcss.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ## Documenting every steps along the project
+  > - Throughout the APPDEV 1 journey, I learned how to document every changes I do in a project, activity or assignment. This makes me realized the importance of having a documented step-by-step when you are building a project, so that, when you encounter an error -- you can always look at your reference and you know exactly what to do.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  
