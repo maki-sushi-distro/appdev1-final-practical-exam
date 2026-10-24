@@ -2,6 +2,10 @@ import styles from "./Signup.module.css";
 import image from "../../assets/blossom-flower.svg";
 import googleIcon from "../../assets/icons-google-logo.svg";
 import appleIcon from "../../assets/icons-apple-logo.svg";
+import { Input } from "@/components/ui/input";
+
+const inputClassName =
+  "h-[var(--control-height)]! rounded-[var(--control-radius)]! border-[length:var(--control-border-width)]! border-[color:var(--color-border)]! px-[var(--spacing-control-inline)]! py-0! text-[length:var(--font-size-control)]! text-[color:var(--color-text)]! placeholder:text-[color:var(--color-placeholder)]! focus-visible:border-[color:var(--color-primary)]! focus-visible:ring-0!";
 
 export default function Signup() {
   return (
@@ -11,7 +15,8 @@ export default function Signup() {
         <form className={styles.form}>
           <div className={styles.field}>
             <label htmlFor="name">Name</label>
-            <input
+            <Input
+              className={inputClassName}
               id="name"
               name="name"
               type="text"
@@ -23,7 +28,8 @@ export default function Signup() {
 
           <div className={styles.field}>
             <label htmlFor="email">Email address</label>
-            <input
+            <Input
+              className={inputClassName}
               id="email"
               name="email"
               type="email"
@@ -35,7 +41,8 @@ export default function Signup() {
 
           <div className={styles.field}>
             <label htmlFor="password">Password</label>
-            <input
+            <Input
+              className={inputClassName}
               id="password"
               name="password"
               type="password"
