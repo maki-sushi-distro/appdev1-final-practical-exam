@@ -1,79 +1,13 @@
 import styles from "./Login.module.css";
 import image from "../../assets/blossom-flower.svg";
-import googleIcon from "../../assets/icons-google-logo.svg";
-import appleIcon from "../../assets/icons-apple-logo.svg";
 
 export default function Login() {
   return (
     <main className={styles.signup}>
       <section className={styles.left}>
-        <h1 className={styles.title}>Get Started Now</h1>
-        <form className={styles.form}>
-          <div className={styles.field}>
-            <label htmlFor="name">Name</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Enter your name"
-              autoComplete="name"
-              required
-            />
-          </div>
-
-          <div className={styles.field}>
-            <label htmlFor="email">Email address</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Enter your email"
-              autoComplete="email"
-              required
-            />
-          </div>
-
-          <div className={styles.field}>
-            <label htmlFor="password">Password</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              placeholder="Enter your password"
-              autoComplete="new-password"
-              required
-            />
-          </div>
-
-          <label className={styles.terms}>
-            <input name="terms" type="checkbox" required />
-            <span>
-              I agree to the <a href="#terms">terms &amp; policy</a>
-            </span>
-          </label>
-
-          <button className={styles.submit} type="submit">
-            Signup
-          </button>
-        </form>
-
-        <div className={styles.divider}>
-          <span>Or</span>
-        </div>
-
-        <div className={styles.socialButtons}>
-          <button className={styles.socialButton} type="button">
-            <img src={googleIcon} alt="" />
-            <span>Sign in with Google</span>
-          </button>
-          <button className={styles.socialButton} type="button">
-            <img src={appleIcon} alt="" />
-            <span>Sign in with Apple</span>
-          </button>
-        </div>
-
-        <p className={styles.accountPrompt}>
-          Have an account? <a href="#sign-in">Sign In</a>
+        <h1 className={styles.title}>Welcome back!</h1>
+        <p className={styles.subtitle}>
+          Enter your Credentials to access your account
         </p>
       </section>
       <section className={styles.right}>
